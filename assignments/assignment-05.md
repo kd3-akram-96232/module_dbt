@@ -232,6 +232,9 @@ select employee_id, end_date, concat(DATE_FORMAT(end_date, '%W'), ',' , DATE_FOR
 
 ```sql
 
-
+SELECT 
+    first_name,
+    date_sub(LAST_DAY(HIRE_DATE), INTERVAL DAY(LAST_DAY(HIRE_DATE)) - 1 DAY) AS FIRST_SALARY_DATE
+FROM employees;
 
 ```
