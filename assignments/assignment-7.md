@@ -85,7 +85,7 @@ SELECT o.onum, s.comm, s.comm * o.amt FROM orders o INNER JOIN customers c ON o.
 
 ```sql
 
-select s1.sname, s2.sname, s1.city from salespeople s1, salespeople s2 where s1.city=s2.city and s1.sname> s2.sname;
+select s1.sname, s2.sname, s1.city from salespeople s1, salespeople s2 where s1.city=s2.city and s1.sname > s2.sname;
 +-------+--------+--------+
 | sname | sname  | city   |
 +-------+--------+--------+
